@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.magnusel.easychaosdraft.MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtBoosterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtBoosterCount"
+        android:layout_alignEnd="@+id/txtViewBoosters"
+        android:layout_alignRight="@+id/txtViewBoosters"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:ems="10"
+        android:hint="Booster name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/txtBoosterCount"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_alignLeft="@+id/btnAddBooster"
+        android:layout_alignStart="@+id/btnAddBooster"
+        android:ems="10"
+        android:hint="How many?"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btnAddBooster"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="Add booster(s)"
+        tools:layout_editor_absoluteY="86dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_below="@+id/txtBoosterName"
+        android:layout_alignLeft="@+id/txtViewBoosters"
+        android:layout_alignStart="@+id/txtViewBoosters" />
+
+    <TextView
+        android:id="@+id/txtViewBoosters"
+        android:layout_width="350dp"
+        android:layout_height="208dp"
+        tools:layout_editor_absoluteY="164dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/btnAddBooster"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtViewBoosters"
+        android:layout_alignStart="@+id/txtViewBoosters"
+        android:layout_below="@+id/txtViewBoosters"
+        android:ems="10"
+        android:hint="Player name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtViewPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStart"
+        android:layout_alignEnd="@+id/txtViewBoosters"
+        android:layout_alignLeft="@+id/txtPlayerName"
+        android:layout_alignRight="@+id/txtViewBoosters"
+        android:layout_alignStart="@+id/txtPlayerName"
+        android:layout_below="@+id/txtPlayerName" />
+
+    <Button
+        android:id="@+id/btnAddPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtViewPlayers"
+        android:layout_toEndOf="@+id/txtPlayerName"
+        android:layout_toRightOf="@+id/txtPlayerName"
+        android:text="Add player" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal boosters"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnAddPlayer"
+        android:layout_alignEnd="@+id/btnAddPlayer"
+        android:layout_marginRight="91dp"
+        android:layout_marginEnd="91dp" />
+</RelativeLayout>
